@@ -1,16 +1,16 @@
-# court_booker_app
+# Court Booker App
 
-A new Flutter project.
+Court Booker is a mobile application built with Flutter, designed specifically for tennis enthusiasts. It streamlines the process of booking and managing tennis court reservations. With a user-friendly interface and integration with Open Meteo for live weather updates, the app ensures users have a seamless and informative booking experience.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Court Reservations**: Provides a straightforward and engaging way for users to book tennis courts.
+- **Weather Forecast Integration**: The app integrates with the Open Meteo API to provide users with up-to-date weather forecasts, including precipitation probabilities, so they can plan their tennis sessions with confidence.
+- **User-Friendly Management**: A straightforward approach to view, book, and cancel reservations, enhancing user experience with simple navigation and interaction.
+- **Local Data Management**: Utilizes local data storage to keep user reservations and settings, allowing for a personalized and consistent experience across sessions.
+- **State Management**: The app leverages Flutter Bloc and Hydrated Bloc for state management, paired with go_router for smooth and intuitive navigation.
+- **Clean Code Practices**: Dart extensions are used strategically to enhance code clarity and streamline functionality specific to certain data types.
 
-A few resources to get you started if this is your first Flutter project:
+## Testing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A rigorous suite of unit tests is included to verify the functionality of the Bloc components, which manage the business logic for booking and unbooking courts, as well as handling the serialization and deserialization of user data. Additional testing is provided for the WeatherBloc, which manages the API call states, ensuring the app's robustness in interacting with external weather data.
